@@ -1,0 +1,29 @@
+body {
+  background-image: url("../img/Game.jpg");
+  background-position: center;
+  background-repeat: repeat;
+
+
+}
+h2 {
+  text-align: center;
+  font-family: sans-serif;
+}
+.parent {
+  padding-left:29.5vw;
+
+
+}
+.outer{
+  height: 8vh;
+  width: 100%;
+}
+.cards {
+  height: 45vh;
+  width: 17vw;
+}
+@media (max-width: 800px) {
+  .cards {
+    height: 31vh;
+    width: 42vw;
+}

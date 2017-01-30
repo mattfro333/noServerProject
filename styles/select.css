@@ -1,0 +1,43 @@
+.oval {
+  position: relative;
+  top: 3.3vh;
+  width: 98vw;
+  height: 16vh;
+  border-radius: 100vw / 25vh;
+  background-color: green;
+  opacity: .9;
+  z-index: -1;
+}
+.title {
+  position:relative;
+  flex-wrap: wrap;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 4em;
+  color: #FC1268;
+  text-decoration: underline;
+  top: 3vh;
+  z-index: 1;
+}
+body {
+  background-image: url("../img/select.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+  @media (max-width: 800px) {
+.title {
+    position:relative;
+    flex-wrap: wrap;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2.7em;
+    color: #FC1268;
+    top: 3vh;
+    z-index: 1;
+    opacity: 1;
+  }
+}

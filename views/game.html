@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="./styles/game.css">
+
+
+
+<button ng-click="getCards()" class="btn btn:hover" type="button" name="button">{{title}}</button>
+
+<button ng-click="getHits()" ng-disabled="cardObj.count>=21" class="btn btn:hover" type="button" name="button">{{title2}}</button>
+
+<div class="">
+<h2>Your  count is: {{cardObj.count}}</h2>
+</div>
+<div class="parent">
+<div class="outer" ng-repeat="card in cards">
+  <img class="cards" src={{card.image}}   alt="">
+</div>
+</div>

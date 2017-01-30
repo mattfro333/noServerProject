@@ -1,0 +1,96 @@
+.oval {
+  position: relative;
+  top: 3.3vh;
+  width: 100vw;
+  height: 16vh;
+  border-radius: 100vw / 25vh;
+  background-color: green;
+  opacity: .9;
+  z-index: -1;
+}
+.title {
+  position:relative;
+  flex-wrap: wrap;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 4em;
+  color: #FC1268;
+  text-decoration: underline;
+  top: 3vh;
+  z-index: 1;
+}
+
+body {
+  background-image: url("../img/Spiral1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+.in{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 94vw;
+  top: 50vh;
+
+}
+.btn {
+ background: #ff0000;
+ background-image: radial-gradient(top, #0f0f0f, #4b555c);
+ border-radius: 200px !important;
+ text-shadow: 0px 1px 3px #666666;
+ font-family:sans-serif;
+ color: #007DFF;
+ font-size: 20px;
+ padding: 10px 20px 10px 20px;
+ text-decoration: none;
+ position: relative;
+
+}
+
+.btn:hover {
+ background: #496e85;
+ background-image: linear-gradient(top, #496e85, #7bafd1);
+ text-decoration: none;
+}
+
+
+
+
+@media (max-width: 800px) {
+  body {
+    background-image: url("../img/Spiraly.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+  }
+  .title {
+    position:relative;
+    flex-wrap: wrap;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.66em;
+    color: #FC1268;
+    text-decoration: underline;
+    top: 5vh;
+    z-index: 1;
+    opacity: 1;
+  }
+  .in{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 98vw;
+    top: 50vh;
+
+  }
+}
