@@ -10,15 +10,20 @@ angular.module('cards',['ui.router']).config(function ($stateProvider, $urlRoute
                 templateUrl: '../views/select.html',
                 controller: 'homeCtrl'
               })
-              .state('game', {
-                url: '/game',
-                templateUrl: '../views/game.html',
+              .state('black', {
+                url: '/black',
+                templateUrl: '../views/black.html',
                 controller: 'blackCtrl'
               })
               .state('stats', {
                 url: '/stats',
                 templateUrl: '../views/stats.html',
                 controller: 'homeCtrl'
+              })
+              .state('poker', {
+                url: '/poker',
+                templateUrl: '../views/poker.html',
+                controller: 'blackCtrl'
               })
               $urlRouterProvider.otherwise('/')
 });
