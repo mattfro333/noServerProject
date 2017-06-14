@@ -1,4 +1,4 @@
-<html class="bg-color9 white-text" ng-app="cards">
+<html class="bg-color9 white-text">
 
 <head>
 
@@ -21,29 +21,24 @@
 
 </head>
 
-<body ng-controller="texasCtrl">
+<body ng-controller="texasCtrl" >
 <div class="container_16">
 	<div class="prefix_6 grid_4 suffix_6">
 
 		<h2>Texas Hold Em</h2>
+    <div class="outer" ng-repeat="card in cards">
+      <img class="cards" src={{card.image}}   alt="">
+    </div>
 	</div>
 	<div class="clear"> </div>
 	<div class="greenline"></div>
 	<div class="prefix_15 grid_1">
-			<a ng-click="getFlop()" ><input id="deal-button" ng-click="getFlop()" class="btn down btn:hover" type="button" value="Deal"/></a>
-			<a ng-click="getFlop()" onclick=flop() ><input id="flop-button" class="btn btn:hover" type="button" value="Flop" style="display: none;"/></a>
-			<a onclick=turn1() ><input id="turn-button" class="btn btn:hover" type="button" value="Turn" style="display: none;"/></a>
-			<a onclick=river1() ><input id="river-button" class="btn btn:hover" type="button" value="River" style="display: none;"/></a>
+			<a ng-click="getFlop()" onclick=deal() ><input id="deal-button" ng-click="getFlop()" class="btn down btn:hover" type="button" value="Deal"/></a>
+			<a ng-click="getNext()" onclick=flop() ><input id="flop-button" class="btn btn:hover" type="button" value="Flop" style="display: none;"/></a>
+			<a ng-click="getNext()" onclick=turn1() ><input id="turn-button" class="btn btn:hover" type="button" value="Turn" style="display: none;"/></a>
+			<a ng-click="getNext()" onclick=river1() ><input id="river-button" class="btn btn:hover" type="button" value="River" style="display: none;"/></a>
 			<a onclick=shuffle() ><input id="shuffle-button" class="btn btn:hover" type="button" value="Shuffle" style="display: none;"/></a>
 	</div>
-  <div class="">
-  <h2>Your  count is: {{cardObj.count}}</h2>
-  </div>
-  <div class="parent">
-  <div class="outer" ng-repeat="card in cards">
-    <img class="cards" src={{card.image}}   alt="">
-  </div>
-  </div>
 	<div class="grid_16">
 		<span id="p1-hand"></span></br>
 		<span id="p2-hand"></span></br>
@@ -80,8 +75,7 @@
 	<div class="clear"> </div>
 
 </div>
-<script src=".././js/controllers/texasCtrl.js"></script>
-<script src=".././js/services/texasSrv.js"></script>
+
 </body>
 <div class="clear"> </div>
 </html>

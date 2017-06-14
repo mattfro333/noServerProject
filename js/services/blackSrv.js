@@ -1,5 +1,5 @@
 angular.module('cards').service('blackSrv', function($http, $q){
-    
+
     this.getCards = function(){
       console.log('http request')
       return $http({
@@ -142,60 +142,5 @@ this.deal = function (arr) {
 };
   // console.log(countedCards);
 
-// var TableModel = {
-//
-//     table:{
-//               deck: [],
-//               flop: [],
-//               turn: new Object(),
-//               river: new Object(),
-//               p1Cards: [],
-//               p2Cards []
-//     },
-//
-//     suits: new Array("CLUBS","SPADES","HEARTS","DIAMONDS"),
-//     cardNames: new Array("ACE","KING",'QUEEN',"JACK","10","9","8","7","6","5","4","3","2"),
-//
-//     buildDeck: function(){
-//             var value = 1;
-//             var rank = 0;
-//             var self = this;
-//             $.each(self.cardNames, function(x){
-//                   $.each(self.suits, function(y){
-//                     mod = y % 4;
-//                     if(mod == 0)
-//                           rank+=1;
-//                           self.table.deck.push(self.newCard(self.CardNames[x],self.suits[y], value, rank));
-//                           value +=1;
-//                   })
-//             })
-//     }
-//     newCard: function(cardName, s, value, rank){
-//               var card new Object();
-//               card.name = cardName+" of "+ s;
-//               card.suit = s;
-//               card.value = value;
-//               card.valueName = cardName;
-//               card.rank = rank;
-//               card.isDealt = false;
-//               card.image = "images/"+value + ".png"
-//
-//               return card
-//             },
-//     deal: function(){
-//           var self = this;
-//           self.table.p1Cards.push(self.getCard());
-//           self.table.p1Cards.push(self.getCard());
-//           self.table.p2Cards.push(self.getCard());
-//           self.table.p2Cards.push(self.getCard());
-//           self.table.flop.push(self.getCard());
-//           self.table.flop.push(self.getCard());
-//           self.table.flop.push(self.getCard());
-//           self.table.turn=self.getCard();
-//           self.table.river=self.getCard();
-// },
-//     }
-//
-// }
 
 });

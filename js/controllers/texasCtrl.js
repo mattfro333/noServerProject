@@ -8,4 +8,12 @@ angular.module('cards').controller('texasCtrl', function($scope,texasSrv){
     })
 
     }
+    $scope.getNext = function(){
+        console.log('turn');
+      texasSrv.getNext().then(function(response){
+        $scope.cards.push(response.cards[0])
+        console.log($scope.cards);
+      })
+
+      }
   })
