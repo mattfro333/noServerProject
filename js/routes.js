@@ -23,7 +23,7 @@ angular.module('cards',['ui.router']).config(function ($stateProvider, $urlRoute
               .state('poker', {
                 url: '/poker',
                 templateUrl: '../views/poker.html',
-                controller: 'blackCtrl'
+                controller: 'texasCtrl'
               })
               $urlRouterProvider.otherwise('/')
 });

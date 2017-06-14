@@ -1,12 +1,7 @@
 angular.module('cards').controller('blackCtrl', function($scope,blackSrv){
   $scope.title = 'Deal';
   $scope.title2 = 'Hit Me';
-  $scope.getDecks = function(){
-    blackSrv.getDecks().then(function(response){
-      $scope.decks = response.cards
-    })
 
-    }
     $scope.getCards = function(){
       console.log('working');
       blackSrv.getCards().then(function(response){

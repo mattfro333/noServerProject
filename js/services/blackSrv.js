@@ -1,15 +1,5 @@
 angular.module('cards').service('blackSrv', function($http, $q){
-    this.getDecks = function(){
-      return $http({
-        method: 'GET',
-        url: 'https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=6'
-      })
-      .then(function(response){
-        console.log(response);
-      return response.data;
-    })
-    }
-
+    
     this.getCards = function(){
       console.log('http request')
       return $http({
