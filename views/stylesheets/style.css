@@ -75,4 +75,11 @@ img{
 
 .white-text{color:white;}
 
+.score {
+  padding-right: 100px;
+  font-size: 1.5em;
+  font-weight: bolder;
+
+}
+
 /* footer links part of footer */

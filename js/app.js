@@ -1,1 +1,1 @@
-angular.module('cards', []);
+angular.module('cards','jQuery', window.jQuery, []);

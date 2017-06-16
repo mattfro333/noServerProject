@@ -33,25 +33,27 @@
 	<div class="clear"> </div>
 	<div class="greenline"></div>
 	<div class="prefix_15 grid_1">
-			<a ng-click="getFlop()" onclick=deal() ><input id="deal-button" ng-click="getFlop()" class="btn down btn:hover" type="button" value="Deal"/></a>
-			<a ng-click="getNext()" onclick=flop() ><input id="flop-button" class="btn btn:hover" type="button" value="Flop" style="display: none;"/></a>
-			<a ng-click="getNext()" onclick=turn1() ><input id="turn-button" class="btn btn:hover" type="button" value="Turn" style="display: none;"/></a>
-			<a ng-click="getNext()" onclick=river1() ><input id="river-button" class="btn btn:hover" type="button" value="River" style="display: none;"/></a>
+			<a onclick=deal() ><input id="deal-button" class="btn down btn:hover" type="button" value="Deal"/></a>
+			<a onclick=flop() ><input id="flop-button" class="btn btn:hover" type="button" value="Flop" style="display: none;"/></a>
+			<a onclick=turn1() ><input id="turn-button" class="btn btn:hover" type="button" value="Turn" style="display: none;"/></a>
+			<a onclick=river1() ><input id="river-button" class="btn btn:hover" type="button" value="River" style="display: none;"/></a>
 			<a onclick=shuffle() ><input id="shuffle-button" class="btn btn:hover" type="button" value="Shuffle" style="display: none;"/></a>
 	</div>
-	<div class="grid_16">
-		<span id="p1-hand"></span></br>
-		<span id="p2-hand"></span></br>
-	</div>
+
 	<div class="prefix_4 grid_10 suffix_2 ">
 		<div class="wrapper">
 			<div class="player-cards">
-				<h3 class="center">Player 1 Cards</h3></br>
+				<h3 class="center">Player 1 Cards</h3>
 				<img id="p1card1" src="../views/images/b2fv.png"/>
 				<img id="p1card2" src="../views/images/b2fv.png"/>
 			</div>
 		</div>
-			</br>
+    <div class="score">
+    <div>
+  		<span id="p1-hand"></span>
+  		<span id="p2-hand"></span>
+  	</div>
+  </div>
 		<div class="board-wrapper">
 			<div class="board">
 				<img id="flop1" src="../views/images/b2fv.png"/>
@@ -61,10 +63,9 @@
 				<img id="river" src="../views/images/b2fv.png"/>
 			</div>
 		</div>
-		</br>
 		<div class="wrapper">
 			<div class="player-cards">
-				<h3 class="center">Player 2 Cards</h3></br>
+				<h3 class="center">Player 2 Cards</h3>
 				<img id="p2card1" src="../views/images/b2fv.png"/>
 				<img id="p2card2" src="../views/images/b2fv.png"/>
 			</div>

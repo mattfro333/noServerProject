@@ -12,6 +12,7 @@ angular.module('cards').controller('texasCtrl', function($scope,texasSrv){
         console.log('turn');
       texasSrv.getNext().then(function(response){
         $scope.cards.push(response.cards[0])
+        $scope.CardNames = texasSrv.buildDeck($scope.cardNames)
         console.log($scope.cards);
       })
 
