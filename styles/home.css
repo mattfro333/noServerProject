@@ -21,7 +21,7 @@
   z-index: 1;
 }
 
-.body1 {
+body {
   background-image: url("../img/Spiral1.jpg");
   background-position: center;
   background-size: cover;

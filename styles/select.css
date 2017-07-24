@@ -20,7 +20,7 @@
   top: 3vh;
   z-index: 1;
 }
-.body2 {
+body {
   background-image: url("../img/Select.jpg");
   background-position: center;
   background-size: cover;
